@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivetrain Helper</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <div id="inputs">
+        <input type="number" name="" id="wheelTravel" value="259.34">
+        <input type="number" name="" id="trackWidth" value="320">
+        <input type="number" name="" id="wheelBase" value ="40">
+        <select name="" id="units">
+            <option value="inches">Inches</option>
+            <option value="mm">Millimeters</option>
+            <option value="distanceUnits::cm">Centimeters</option>
+        </select>
+        <input type="number" name="" id="externalGearRatio" value="1">
+    </div>
+    <div>
+        <input type="text" name="" id="driveName" value="mainDrive">
+        <button id="submitBtn" type="submit" onclick="createDrivetrain()">Submit</button>
+    </div>
+
+    <h1 id="driveCode"></h1>
+</body>
+</html>
