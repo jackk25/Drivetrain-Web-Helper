@@ -9,22 +9,30 @@
 </head>
 <body>
     <script src="index.js"></script>
-    <div id="inputs">
-        <input type="number" name="" id="wheelTravel" value="259.34">
-        <input type="number" name="" id="trackWidth" value="320">
-        <input type="number" name="" id="wheelBase" value ="40">
-        <select name="" id="units">
-            <option value="inches">Inches</option>
-            <option value="mm">Millimeters</option>
-            <option value="distanceUnits::cm">Centimeters</option>
-        </select>
-        <input type="number" name="" id="externalGearRatio" value="1">
-    </div>
-    <div>
-        <input type="text" name="" id="driveName" value="mainDrive">
-        <button id="submitBtn" type="submit" onclick="createDrivetrain()">Submit</button>
-    </div>
-
-    <h1 id="driveCode"></h1>
+    <header>
+        <h1>Drivetrain Helper</h1>
+    </header>
+    <main>
+        <form method="get" onsubmit="event.preventDefault()">
+            <input type="number" name="" id="wheelTravel" value="259.34">
+            <label for="wheelTravel">Wheel Travel</label>
+            <input type="number" name="" id="trackWidth" value="320">
+            <label for="trackWidth">Track Width</label>
+            <input type="number" name="" id="wheelBase" value ="40">
+            <label for="wheelBase">Wheel Base</label>
+            <select name="" id="units">
+                <option value="inches">Inches</option>
+                <option value="mm">Millimeters</option>
+                <option value="distanceUnits::cm">Centimeters</option>
+            </select>
+            <label for="units">Measurement Units</label>
+            <input type="number" name="" id="externalGearRatio" value="1">
+            <label for="externalGearRatio">External Gear Ratio</label>
+            <input type="text" name="" id="driveName" value="mainDrive">
+            <label for="driveName">Drivetrain Name</label>
+            <button id="submitBtn" type="submit" onclick="createDrivetrain()">Submit</button>
+        </form>
+        <code id="driveCode">Drivetrain Code Here!</code>
+    </main>
 </body>
 </html>
